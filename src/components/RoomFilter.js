@@ -27,7 +27,7 @@ types = ['all', ...types];
 types = types.map((item, index) => {
     return ( 
     <option value={item} key={index}>
-        {item}
+        {item} 
     </option>
     );
 });
