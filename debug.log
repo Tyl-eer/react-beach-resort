@@ -3,3 +3,4 @@
 [1015/114429.541:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\betti\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\feba51c8-5332-49cb-9f15-c95c8fde85d2: The system cannot find the path specified. (0x3)
 [1015/114429.542:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 [1021/144636.378:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1022/115012.071:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
