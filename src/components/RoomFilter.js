@@ -20,6 +20,7 @@ const {
     breakfast,
     pets
 } = context;
+// get unique types
 let types = getUnique( rooms, "type");
 // add all
 types = ['all', ...types];
@@ -27,7 +28,7 @@ types = ['all', ...types];
 types = types.map((item, index) => {
     return ( 
     <option value={item} key={index}>
-        {item}
+        {item} 
     </option>
     );
 });
@@ -54,10 +55,10 @@ return <option key={index} value={item}>{item}</option>
                 </select>
               </div>
              {/* end of select type */}
-              {/* guest  */}
+              {/* guests */}
               <div className="form-group">
                <label htmlFor="capacity">
-                 Guest 
+                 Guests
                 </label>
                 <select
                 name="capacity" 
@@ -68,7 +69,7 @@ return <option key={index} value={item}>{item}</option>
                     {people}
                 </select>
               </div>
-             {/* end guest */}
+             {/* end guests */}
              {/* room price */}
              <div className="form-group">
                  <label htmlFor="price">
@@ -117,7 +118,7 @@ return <option key={index} value={item}>{item}</option>
                 onChange={handleChange} />
                 <label htmlFor="breakfast">breakfast</label> 
                </div>
-                              <div className="single-extra">
+                 <div className="single-extra">
                 <input 
                 type="checkbox"
                 name="pets"
