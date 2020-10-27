@@ -1,8 +1,8 @@
-import React, { component } from "react";
+import React, { useState } from "react";
 import items from "./data";
 const RoomContext = React.createContext();
 // <RoomContext.Provider value={'hello'}
-class RoomProvider extends Component {
+const RoomProvider() {
     state={
       rooms: [],
       sortedRooms: [],
