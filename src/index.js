@@ -4,13 +4,13 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter as Router} from 'react-router-dom'
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {RoomProvider} from "./context"
+import {RoomContextProvider} from "./context"
 ReactDOM.render(
-  <RoomProvider>
+  <RoomContextProvider>
   <Router>
     <App />
   </Router>
-  </RoomProvider>,
+  </RoomContextProvider>,
   document.getElementById('root')
 );
 
