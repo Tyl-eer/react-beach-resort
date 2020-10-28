@@ -4,8 +4,8 @@ import RoomsList from "./RoomList";
 import { RoomContext } from "../context";
 import Loading from "./Loading"
 
-function RoomContainer() {
-const { loading,state } = useContext(RoomContext);
+const RoomContainer = () => {
+const { loading, state } = useContext(RoomContext);
     if (loading) {
             return <Loading />;
           }
@@ -17,7 +17,7 @@ const { loading,state } = useContext(RoomContext);
          );
     }
 
-export default (RoomContainer)
+export default RoomContainer;
 
 // import React from 'react'
 // import RoomsFilter from "./RoomFilter";

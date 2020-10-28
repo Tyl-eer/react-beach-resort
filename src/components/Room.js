@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import defaultImg from "../images/room-1.jpeg";
 import PropTypes from "prop-types";
-export default function Room({ room }) {
+const Room = ( room ) => {
   const { name, slug, images, price } = room;
 
     return (
@@ -31,3 +31,5 @@ Room.propTypes = {
 
   })
 };
+
+export default Room;

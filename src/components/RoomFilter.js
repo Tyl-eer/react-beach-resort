@@ -1,12 +1,11 @@
-import React from "react";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { RoomContext } from "../context";
 import Title from "../components/Title";
 // get all unique values
 const getUnique = (items, value) => {
     return [...new Set(items.map(item => item[value]))];
 };
-export default function RoomFilter({ rooms }) {
+const RoomFilter = ({ rooms }) => {
 const context = useContext( RoomContext );
 const {
     handleChange,
@@ -132,4 +131,6 @@ return <option key={index} value={item}>{item}</option>
          </form>
         </section>
     );
-}
+};
+
+export default RoomFilter;
